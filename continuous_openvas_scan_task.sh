@@ -18,3 +18,6 @@ last_report_id=$(omp -u $username -w $password -G $scan_task --details | tail -n
 
 # Generate HTML Report
 omp -u $username -w $password -R $last_report_id -f 6c248850-1f62-11e1-b082-406186ea4fc5 > $output_dir/latest_report.html
+
+# Generate CSV Results Report
+omp -u $username -w $password -R $last_report_id -f c1645568-627a-11e3-a660-406186ea4fc5 > $output_dir/latest_results.csv

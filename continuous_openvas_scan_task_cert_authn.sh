@@ -28,3 +28,11 @@ omp --use-certs \
     --client-key $client_key_path \
     -R $last_report_id \
     -f 6c248850-1f62-11e1-b082-406186ea4fc5 > $output_dir/latest_report.html
+
+# Generate CSV Results Report
+omp --use-certs \
+    --client-ca-cert $ca_cert_path \
+    --client-cert $client_cert_path \
+    --client-key $client_key_path \
+    -R $last_report_id \
+    -f c1645568-627a-11e3-a660-406186ea4fc5 > $output_dir/latest_results.csv
